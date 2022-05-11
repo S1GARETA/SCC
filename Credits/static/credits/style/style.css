@@ -1,0 +1,256 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background: url("../images/fon_head.jpg");
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+
+  margin-left: 20px;
+}
+
+.nav_head {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+
+  color: #000;
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.nav_link:hover {
+  color: #fd0029;
+}
+
+.logout {
+  font-size: 20px;
+  margin-right: 40px;
+
+  color: #000;
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.logout:hover {
+  color: #fd0029;
+}
+/* Game */
+
+.game {
+  margin: 0;
+}
+
+.border-test {
+  background-color: black;
+}
+
+.container__main {
+  margin: 0;
+}
+
+/* Blocks */
+
+.blocks {
+  display: flex;
+
+  height: 100vh;
+
+  background: url("../images/main-fon3.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.block {
+  padding: 10px;
+  border-top: 5px solid black;
+}
+
+.box-1 {
+  flex: 3;
+}
+
+.box-2 {
+  flex: 3;
+}
+
+.box-3 {
+  flex: 2;
+}
+
+.between-box {
+  padding: 0px;
+  width: 10px;
+
+  background: url("../images/between-fon.png");
+  background-size: 10px;
+}
+
+/* Money */
+
+.money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.money-name {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.money-china-man {
+  height: 100px;
+}
+
+.money-count {
+  text-align: center;
+
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.money-icon {
+  width: 60%;
+  height: 60%;
+
+  padding-top: 50px;
+}
+
+.money-china {
+  width: 200px;
+  height: 200px;
+
+  padding-top: 50px;
+}
+
+/* Social Credits */
+
+.social_credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-text {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.social-credits-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+}
+
+.social-credits-items{
+  flex-grow: 1;
+}
+
+.social-image {
+  justify-content: center;
+}
+
+.president {
+  width: 150px;
+  height: 100px;
+}
+
+.credit-count {
+  justify-content: center;
+
+  font-size: 36px;
+}
+
+/* Product items */
+.box-3 {
+  padding: 0px;
+  padding-right: 2px;
+}
+.products_items {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_item {
+  width: 100%;
+  height: 10vh;
+
+  /* border: 1px solid grey; */
+
+  background: url("../images/icons/button.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.box-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  place-items: center center;
+  height: 90%;
+
+  /* border: 1px solid grey; */
+  padding: 4px 5px 2px 5px;
+}
+
+.product_icon {
+  grid-area: 1/1/3/2;
+  width: 40%;
+  height: 80%;
+}
+
+.product_name {
+  grid-area: 1/2/1/3;
+}
+
+.price {
+  grid-area: 2/2/2/3;
+}
+
+.product_count {
+  grid-area: 1/3/3/4;
+}
+
+.miska_ris {
+  background: url("../images/icons/miska_ris.png");
+  background-size: 100% 100%;
+}
