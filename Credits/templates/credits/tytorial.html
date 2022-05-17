@@ -1,0 +1,70 @@
+{% extends "credits/layout.html" %}
+{% load static %}
+
+{% block link %}
+  <link rel="stylesheet" href="{% static 'credits/css/volume.css' %}">
+  <link rel="stylesheet" href="{% static 'credits/css/tytorial.css' %}">
+  <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gagalin.css">
+  <link rel="stylesheet" href="http://fonts.fontstorage.com/import/comfortaa.css">
+  <script src="https://kit.fontawesome.com/a3b9986461.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block title %}Туториал{% endblock %}
+
+{% block content %}
+  <header class="header">
+        <div class="container__head">
+          <div class="header__inner">
+
+            <div class="logo_volume">
+              <img src="{% static 'credits/images/icons/logo2.png' %}" alt="logo" class="logo">
+
+              <div class="volume">
+                <div id="audioplayer" class="group-audio">
+                  <audio id="audiotrack" preload="auto" autoplay loop>
+                    <source src="{% static 'credits/audio/TytorialMusic.mp3' %}" type="audio/mpeg">
+                  </audio>
+                  <script type="text/javascript" src="{% static 'credits/js/volume.js' %}"></script>
+                </div>
+              </div>
+            </div>
+
+            <a class="back_main" href="{% url 'main' %}">Вернуться обратно</a>
+
+            <div class="container__user">
+              <a class="user_name" href="#">{{ username }}</a>
+              <a class="logout" href="#">Logout</a>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="container__text">
+        <div class="cina_img">
+          <img src="{% static 'credits/images/JhonSina.png' %}" alt="ДЖОООООООН СИНААААААА!! ТУ-ДУ-ТУ-ДУ" class="cina">
+          <p class="text_after_img">老大哥在看着你</p>
+        </div>
+        <div class="text_right">
+          <p>Нихао! Меня зовут Джооооооон Синааааа, . . . я своего рода местный сторожила тут.
+            Расскажу тебе, как тут что устроено и если ты внимательно будешь слушать меня,
+            то возможно получишь 15 соцкредитов. Шучу! ха-ха.<br>
+            Кхе-кхе, так вот . . .
+            Приветствую тебя дорогой друг в самой захватывающей и не обычной игре под названием "Жизнь".<br>
+            Тебе придется многое преодолеть, а также совладать с новыми мыслями и мировозрением.<br>
+            В целом тут всё просто, зарабатывай самую лучшую валюту в мире, делай хорошие дела, и если ты не облажаешься,
+            то получишь свои соцкредиты. С помощью них ты двигаешься выше по социальной лестнице и можешь зарабатывать
+            больше юаней.<br>
+            "Но что же можно делать полезного?!" - спросишь ты. А я тебе скажут вот что:
+            "помогай пожилым людям" и "благотворительным фондам", для начала сойдет. Естественно для этого нужны
+            большие деньги, и чтобы их было больше, поешь "миску риса" и за работу!<br>
+            Ну . . . вроде самое основное тебе рассказал, иногда заходи ко мне, может расскажу тебе чего нового.<br>
+            Стань самым лучшим и показательным гражданином своей страны. Будь примером для всех!
+          </p>
+        </div>
+        <div class="text_down">
+          <p></p>
+        </div>
+      </div>
+{% endblock %}
+

@@ -1,0 +1,59 @@
+/* Volume */
+
+.volume {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#audioplayer {
+  width: 200px;
+}
+
+.volume_mute {
+  width: 48px; /* Размер кнопки */
+  height: 48px;
+
+  border: 0;
+  background: 0;
+  background-size: cover;
+}
+
+.fa-volume-high:before,
+.fa-volume-xmark:before {
+  font-size: 30px; /* Размер иконки звука */
+  color: rgb(86, 101, 116); /* Цвет иконки звука */
+}
+
+/* Custom */
+
+.volume_slider {
+  -webkit-appearance: none;
+  width: 120px;
+
+  position: relative;
+  bottom: 9px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: rgb(86, 101, 116); /* Цвет полоски */
+  height: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid rgb(86, 101, 116); /* Цвет окружности */
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  max-width: 80px;
+  position: relative;
+  bottom: 7px;
+  background-color: #fff; /* Цвет внутри круга */
+  cursor: -webkit-grab;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+}

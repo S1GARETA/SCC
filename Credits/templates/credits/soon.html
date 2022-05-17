@@ -1,0 +1,16 @@
+{% extends "credits/layout.html" %}
+{% load static %}
+
+{% block link %}
+  <link rel="stylesheet" href="{% static 'credits/css/soon.css' %}">
+  <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gagalin.css"> <!--font-family: 'Gagalin';-->
+{% endblock %}
+
+{% block title %}Скоро{% endblock %}
+
+{% block content %}
+  <div class="container__inner">
+    <p class="text">Возможно тут скоро что-то появится</p>
+    <a class="back_main" href="{% url 'main' %}">Вернуться обратно</a>
+  </div>
+{% endblock %}

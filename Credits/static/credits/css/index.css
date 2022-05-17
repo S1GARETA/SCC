@@ -1,0 +1,353 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background: url("../images/fon_head.jpg");
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Gagalin';
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+
+  margin-left: 40px;
+}
+
+.nav_head {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+
+  color: #000;
+  text-decoration: none;
+
+  transition: color 0.3s linear;
+}
+
+.container__user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-right: 80px;
+
+  font-size: 24px;
+}
+
+.user_name {
+  text-decoration: none;
+  margin-bottom: 5px;
+
+  color: black;
+  transition: color 0.3s linear;
+}
+
+.logout {
+  text-decoration: none;
+
+  color: black;
+  transition: color 0.3s linear;
+}
+
+.nav_link:hover,
+.user_name:hover,
+.logout:hover {
+  color: #e81c29;
+}
+/* Game */
+
+.game {
+  margin: 0;
+}
+
+/* Blocks */
+
+.blocks {
+  display: flex;
+
+  height: 100vh;
+
+  background: url("../images/main-fon3.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.block {
+  padding: 10px;
+  border-top: 5px solid black;
+}
+
+.box-1 {
+  flex: 3;
+
+  position: relative;
+}
+
+.box-2 {
+  flex: 3;
+
+  position: relative;
+}
+
+.box-3 {
+  flex: 2;
+}
+
+.between-box {
+  padding: 0px;
+  width: 10px;
+
+  background: url("../images/between-fon.png");
+  background-size: 10px;
+}
+
+/* Money */
+
+.money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.money_per_second {
+  text-align: center;
+  text-transform: lowercase;
+
+  font-family: 'Souses';
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.money-china-man {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+
+  height: 15%;
+}
+
+.money_count {
+  text-align: center;
+
+  font-family: 'Souses';
+  font-size: 28px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.money_icon {
+  z-index: 100;
+  width: 256px;
+  height: 256px;
+
+  background: url("../images/icons/money.png") no-repeat;
+  background-size: 256px 256px;
+  margin-top: 80px;
+
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+}
+
+.money_icon:hover {
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+.money_icon:active {
+  transform: scale(0.8);
+}
+
+/* Social Credits */
+
+.social_credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-text {
+  font-family: 'Gagalin';
+  text-transform: uppercase;
+  font-size: 40px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.credit-count {
+  padding-top: 20px;
+
+  font-family: 'Souses';
+  font-size: 36px;
+}
+
+.president {
+  position: absolute;
+  top: 10px;
+  left: 0%;
+
+  width: 40%;
+}
+
+.cat_girl-1 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 20%;
+}
+
+.social_info_1 {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  margin-top: 120px;
+}
+
+.profit_per_click {
+  align-self: center;
+
+  border: 1px solid gray;
+}
+
+.profit_count {
+  border: 1px solid gray;
+}
+
+.social_info_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Product items */
+.box-3 {
+  padding: 0px;
+  padding-right: 5px;
+}
+.products_items {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_item {
+  width: 100%;
+  height: 10vh;
+
+  background: url("../images/icons/button.png") no-repeat;
+  background-size: 100% 100%;
+
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+}
+
+.product_item:hover {
+  transform: scale(1.02);
+  filter: brightness(110%);
+}
+
+.box-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  place-items: center center;
+  height: 90%;
+
+  padding: 4px 5px 2px 5px;
+}
+
+.product_icon {
+  grid-area: 1/1/3/2;
+  width: 100%;
+  height: 100%;
+}
+
+.product_name {
+  grid-area: 1/2/1/3;
+
+  font-family: 'Gagalin';
+  font-size: 20px;
+}
+
+.price {
+  grid-area: 2/2/2/3;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Souses';
+  font-size: 20px;
+}
+
+.price img {
+  width: 25px;
+}
+
+.product_count {
+  grid-area: 1/3/3/4;
+
+  font-family: "Souses";
+  font-size: 20px;
+}
+
+.miska_ris {
+  width: 40%;
+  height: 70%;
+  background: url("../images/icons/miska_ris.png");
+  background-size: 100% 100%;
+}
+
+.help_old {
+  width: 40%;
+  height: 70%;
+  background: url("../images/icons/help_oldman.png") no-repeat;
+  background-size: 100% 100%;
+  border-radius: 30%;
+}
+
+.help_old_text {
+  font-size: 18px;
+}
+
+.charity {
+  width: 60%;
+  height: 60%;
+  background: url("../images/icons/charity.jpg") no-repeat;
+  background-size: 100% 100%;
+  border-radius: 30%;
+}
+/* Volume */
+
+.volume {
+  left: 150px;
+  top: 25px;
+}

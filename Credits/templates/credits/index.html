@@ -1,112 +1,140 @@
+{% extends "credits/layout.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'credits/style/style.css' %}">
-    <title>Social Credits</title>
-  </head>
-  <body>
 
-    <header class="header">
+{% block link %}
+    <link rel="stylesheet" href="{% static 'credits/css/volume.css' %}">
+    <link rel="stylesheet" href="{% static 'credits/css/index.css' %}">
+    <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gagalin.css"> <!--font-family: 'Gagalin';-->
+    <link rel="stylesheet" href="http://fonts.fontstorage.com/import/comfortaa.css"> <!--font-family: 'Comfortaa';-->
+    <link rel="stylesheet" href="http://fonts.fontstorage.com/import/getvoip.css"> <!--font-family: 'GetVoIP Grotesque';-->
+    <link rel="stylesheet" href="http://fonts.fontstorage.com/import/souses.css"> <!--font-family: 'Souses';-->
+    <script src="https://kit.fontawesome.com/a3b9986461.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block title %}Social Credits{% endblock %}
+
+{% block content %}
+  <header class="header">
       <div class="container__head">
         <div class="header__inner">
 
-          <img src="{% static 'credits/images/icons/logo2.png' %}" alt="logo" class="logo">
+          <div class="logo_volume">
+            <img src="{% static 'credits/images/icons/logo2.png' %}" alt="logo" class="logo">
+
+            <div class="volume">
+              <div id="audioplayer" class="group-audio">
+                <audio id="audiotrack" preload="auto" autoplay loop>
+                  <source src="{% static 'credits/audio/MainMusic.mp3' %}" type="audio/mpeg">
+                </audio>
+                <script type="text/javascript" src="{% static 'credits/js/volume.js' %}"></script>
+              </div>
+            </div>
+          </div>
 
           <nav class="nav_head">
-            <a class="nav_link" href="#">Туториал</a>
-            <a class="nav_link" href="#">Скоро</a>
-            <a class="nav_link" href="#">Скоро</a>
+            <a class="nav_link" href="{% url 'guide' %}">Туториал</a>
+            <a class="nav_link" href="{% url 'soon' %}">Скоро</a>
+            <a class="nav_link" href="{% url 'soon' %}">Скоро</a>
           </nav>
 
-          <a class="logout" href="#">Logout</a>
+          <div class="container__user">
+            <a class="user_name" href="#">{{ username }}</a>
+            <a class="logout" href="{% url 'login' %}">Logout</a>
+          </div>
 
         </div>
       </div>
     </header>
-
+  <!-- ....................................................... -->
     <div class="game">
       <div class="container__main">
         <div class="container__inner">
           <div class="blocks">
-
+<!-- ..............Box 1.............. -->
             <div class="block box-1">
+              <img class="money-china-man" src="{% static 'credits/images/china_poklon.gif' %}" alt="">
+
               <div class="money">
-                <div class="money-name">
-                  <img class="money-china-man" src="{% static 'credits/images/china_poklon.gif' %}" alt="">
-                  Юани
-                </div>
-                <div class="money-count">100.000</div>
-                <img class="money-icon" src="{% static 'credits/images/icons/money.png' %}" alt="">
+
+                <div class="money_count">100.000.000.000</div>
+                <div class="money_per_second">0 per second</div>
+                <div class="money_icon" alt="Big Money"></div>
 
               </div>
             </div>
 
             <div class="between-box"></div>
-
+<!-- ..............Box 2.............. -->
             <div class="block box-2">
               <div class="social_credits">
 
                 <div class="social-text">Social Credits</div>
-                <div class="social-credits-items">
-
-                  <div class="social-image social-credits-items">
-                    <img class="president" src="{% static 'credits/images/president.png' %}" alt="">
-                  </div>
-                  <div class="credit-count social-credits-items">
-                    1000
-                  </div>
-
+                <div class="credit-count">
+                  1000
                 </div>
+                <img class="president" src="{% static 'credits/images/president.png' %}" alt="">
+                <img class="cat_girl-1" src="{% static 'credits/images/CatGirl1.png' %}">
+
+          <!--  <div class="social_info_1">
+                  <div class="profit_per_click">
+                    Прибыль за клик:
+                  </div>
+                  <div class="profit_count">
+                    20
+                  </div>
+                </div>
+
+                <div class="social_info_2">
+                  <div class="all_coins">
+                    Заработано  за всё время:
+                  </div>
+                  <div class="profit_alltime">
+                    10.000.000
+                  </div>
+                </div> -->
 
               </div>
             </div>
 
             <div class="between-box"></div>
-
+<!-- ..............Box 3.............. -->
             <div class="block box-3">
               <div class="products_items">
+
                 <div class="product_item">
                   <div class="box-item">
                     <div class="product_icon miska_ris"></div>
                     <div class="product_name">Миска Рис</div>
-                    <div class="price">5000</div>
+                    <div class="price">
+                      <img src="{% static 'credits/images/icons/logo2.png' %}" class="logo_money">
+                      <p class="price_text">5000</p>
+                    </div>
                     <div class="product_count">10</div>
                   </div>
                 </div>
                 <div class="product_item">
                   <div class="box-item">
-                    <div class="product_icon miska_ris"></div>
-                    <div class="product_name">Миска Рис</div>
-                    <div class="price">5000</div>
+                    <div class="product_icon help_old"></div>
+                    <div class="product_name help_old_text">Помочь старикам</div>
+                    <div class="price">
+                      <img src="{% static 'credits/images/icons/logo2.png' %}" class="logo_money">
+                      <p class="price_text">5000</p>
+                    </div>
                     <div class="product_count">10</div>
                   </div>
                 </div>
                 <div class="product_item">
                   <div class="box-item">
-                    <div class="product_icon miska_ris"></div>
-                    <div class="product_name">Миска Рис</div>
-                    <div class="price">5000</div>
+                    <div class="product_icon charity"></div>
+                    <div class="product_name charity_text">Благотворительность</div>
+                    <div class="price">
+                      <img src="{% static 'credits/images/icons/logo2.png' %}" class="logo_money">
+                      <p class="price_text">5000</p>
+                    </div>
                     <div class="product_count">10</div>
                   </div>
                 </div>
-                <div class="product_item">
-                  <div class="box-item">
-                    <div class="product_icon miska_ris"></div>
-                    <div class="product_name">Миска Рис</div>
-                    <div class="price">5000</div>
-                    <div class="product_count">10</div>
-                  </div>
-                </div>
-                <div class="product_item">
-                  <div class="box-item">
-                    <div class="product_icon miska_ris"></div>
-                    <div class="product_name">Миска Рис</div>
-                    <div class="price">5000</div>
-                    <div class="product_count">10</div>
-                  </div>
-                </div>
+
               </div>
             </div>
 
@@ -115,6 +143,4 @@
         </div>
       </div>
     </div>
-
-  </body>
-</html>
+{% endblock %}

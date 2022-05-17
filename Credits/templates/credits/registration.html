@@ -1,15 +1,15 @@
+{% extends "credits/layout.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="ru" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'credits/style/styleregistr.css' %}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- <link rel="stylesheet" href="style/volume.css"> -->
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'credits/css/volume.css' %}">
+    <link rel="stylesheet" href="{% static 'credits/css/registr.css' %}">
     <script src="https://kit.fontawesome.com/a3b9986461.js" crossorigin="anonymous"></script>
-    <title> Registration </title>
-  </head>
-  <body>
+{% endblock %}
+
+{% block title %}Registration{% endblock %}
+
+{% block content %}
     <div class="login-wrap">
     	<div class="login-html">
 
@@ -17,8 +17,8 @@
           <div id="audioplayer" class="group-audio">
             <audio id="audiotrack" preload="auto" autoplay loop>
               <source src="{% static 'credits/audio/TheRedSun.mp3' %}" type="audio/mpeg">
-              <script type="text/javascript" src="{% static 'credits/js/volume.js' %}"></script>
             </audio>
+            <script type="text/javascript" src="{% static 'credits/js/volume.js' %}"></script>
           </div>
         </div>
 
@@ -35,7 +35,7 @@
     					<input id="pass" type="password" class="input" data-type="password">
     				</div>
     				<div class="group">
-    					<input type="submit" class="button" value="Войти">
+    					<a type="submit" class="button" href="{% url 'main' %}">Войти</a>
     				</div>
     				<div class="hr"></div>
             <div class="icons-text">
@@ -65,9 +65,9 @@
     					<input id="pass" type="password" class="input" data-type="password">
     				</div>
     				<div class="group">
-    					<input type="submit" class="button" value="Зарегистрироваться">
+                        <a type="submit" class="button" href="#">Зарегистрироваться</a>
     				</div>
-            <div class="foot-lnk">
+                    <div class="foot-lnk">
     					<label for="tab-1">Уже есть аккаунт?</label>
     				</div>
     				<div class="hr hr-1"></div>
@@ -87,5 +87,4 @@
     		</div>
     	</div>
     </div>
-  </body>
-</html>
+{% endblock %}
