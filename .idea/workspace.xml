@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9537743c-f2a6-4c19-9c43-0cb95a72eedb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Credits/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credits/templates/credits/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credits/templates/credits/test_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credits/templates/credits/test_login_register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/static/credits/audio/MainMusic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/static/credits/audio/MainMusic.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/static/credits/audio/TytorialMusic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/static/credits/audio/TytorialMusic.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clicker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clicker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clicker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clicker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/static/credits/css/registr.css" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/static/credits/css/registr.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/templates/credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/templates/credits/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/templates/credits/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/templates/credits/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/templates/credits/testDB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/templates/credits/tytorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/templates/credits/tytorial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Clicker-main/Clicker-main" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <a href="{% url 'test_index' %}"> home</a>
+    <a href="{% url 'logout' %}"> Logout</a>
+  </div>
+  {% block body %}
+  {% endblock %}
+</body>
+</html>

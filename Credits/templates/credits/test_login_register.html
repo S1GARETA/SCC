@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/a3b9986461.js" crossorigin="anonymous"></script>
 {% endblock %}
 
-{% block title %}Регистрация{% endblock %}
+{% block title %}Registration{% endblock %}
 
 {% block content %}
     <div class="login-wrap">
@@ -104,3 +104,33 @@
     	</div>
     </div>
 {% endblock %}
+
+<!--
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Welcome  to Test {{user}}</h1>
+    {% if invalid %}
+        Такого пользователя нету
+    {% endif %}
+
+    <form action="{% url 'test_login_register' %}" method="POST">
+        {% csrf_token %}
+        {{user_form.username}} <br><br>
+        {{user_form.password}} <br><br>
+        <button type="submit">Войти</button>
+    </form>
+
+    <form action="{% url 'test_login_register' %}" method="POST">
+        {% csrf_token %}
+        {{user_form.username}} <br><br>
+        {{user_form.password}} <br><br>
+        {{user_form.password_confirm}} <br><br>
+        <button type="submit">Регистрация</button>
+    </form>
+</body>
+</html>
+-->
