@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
  /* Header */
@@ -115,8 +115,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .text_right {
   grid-area: 1/2/3/3;
-  padding-top: 10px;
-  padding-right: 25px;
+  padding-top: 30px;
+  padding-right: 80px;
 }
 
 .text_down {
@@ -126,10 +126,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .text_right,
 .text_down {
-  text-align: left;
+  text-align: justify;
 
   font-size: 22px;
-  line-height: 32px;
+  line-height: 36px;
 }
 
 /* Volume */

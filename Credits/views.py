@@ -1,13 +1,26 @@
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from .models import TestDBUser
+
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+from .models import Core
 from .forms import UserForm
 
 
 @login_required
 def index(request):
-    return render(request, 'credits/index.html')
+    core = Core.objects.get(user=request.user)
+    return render(request, 'credits/index.html', {'core': core})
+
+
+@api_view(['GET'])
+def call_click(request):
+    core = Core.objects.get(user=request.user)
+    core.click()
+    return Response({'coins': core.coins})
+
 
 
 def registration(request):
@@ -28,6 +41,8 @@ def registration(request):
             user_form = UserForm(request.POST)  # регистрация
             if user_form.is_valid():
                 user = user_form.save()
+                core = Core(user=user)
+                core.save()
                 login(request, user)
                 return redirect('main')
             return render(request, 'credits/registration.html', {'user_form': user_form})
@@ -37,7 +52,7 @@ def registration(request):
 
 
 def guide(request):
-    return render(request, 'credits/tytorial.html', {'username': request.user})
+    return render(request, 'credits/tytorial.html')
 
 
 def soon(request):

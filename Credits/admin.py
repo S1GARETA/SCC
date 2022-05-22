@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import TestDBUser
+from .models import TestDBUser, Core
 
 
-admin.site.register(TestDBUser)
+admin.site.register(Core)

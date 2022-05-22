@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="http://fonts.fontstorage.com/import/getvoip.css"> <!--font-family: 'GetVoIP Grotesque';-->
     <link rel="stylesheet" href="http://fonts.fontstorage.com/import/souses.css"> <!--font-family: 'Souses';-->
     <script src="https://kit.fontawesome.com/a3b9986461.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'credits/js/click.js' %}"></script>
 {% endblock %}
 
 {% block title %}Social Credits{% endblock %}
@@ -56,9 +57,9 @@
 
               <div class="money">
 
-                <div class="money_count">100.000.000.000</div>
+                <div class="money_count" id="coins">{{core.coins}}</div>
                 <div class="money_per_second">0 per second</div>
-                <div class="money_icon" alt="Big Money"></div>
+                <div class="money_icon" alt="Big Money" onclick="call_click()"></div>
 
               </div>
             </div>
@@ -70,7 +71,7 @@
 
                 <div class="social-text">Social Credits</div>
                 <div class="credit-count">
-                  1000
+                  {{core.credits}}
                 </div>
                 <img class="president" src="{% static 'credits/images/president.png' %}" alt="">
                 <img class="cat_girl-1" src="{% static 'credits/images/CatGirl1.png' %}">
