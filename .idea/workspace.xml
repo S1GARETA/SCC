@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9537743c-f2a6-4c19-9c43-0cb95a72eedb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Credits/static/credits/js/click.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credits/constanrs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Credits/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clicker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clicker/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Credits/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/migrations/0002_core.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Credits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Credits/static/credits/css/tytorial.css" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/static/credits/css/tytorial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/static/credits/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/static/credits/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credits/static/credits/js/click.js" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/static/credits/js/click.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Credits/templates/credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/templates/credits/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Credits/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Credits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Credits/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

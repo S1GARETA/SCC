@@ -136,12 +136,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .money_per_second {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
   text-align: center;
   text-transform: lowercase;
 
   font-family: 'Souses';
   font-size: 18px;
   padding-bottom: 10px;
+}
+
+.coins_per {
+    padding-right: 10px;
 }
 
 .money-china-man {
@@ -270,7 +278,15 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.2s linear;
 }
 
-.product_item:hover {
+.disabled {
+  filter: brightness(0.4);
+}
+
+.enabled {
+  filter: brightness(1);
+}
+
+.enabled:hover {
   transform: scale(1.02);
   filter: brightness(110%);
 }
